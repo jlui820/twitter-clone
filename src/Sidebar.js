@@ -25,7 +25,6 @@ function Sidebar() {
       <SidebarOption Icon={ListAltIcon} text='Lists'/>
       <SidebarOption Icon={PermIdentityIcon} text='Profile'/>
       <SidebarOption Icon={MoreHorizIcon} text='More'/>
-
       {/* Button -> Tweet */}
       <Button variant='outlined' className='sidebar_tweet' fullWidth>Tweet</Button>
     </div>
