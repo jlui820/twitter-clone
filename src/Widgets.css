@@ -1,3 +1,7 @@
 .widgets {
   flex: 0.3;
 }
+
+.share {
+  border: 10 px solid red;
+}
