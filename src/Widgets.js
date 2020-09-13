@@ -15,7 +15,7 @@ function Widgets() {
         <input placeholder='Search Twitter' type='text' />
       </div>
 
-      <div className='widgets__widgetsContainer'>
+      <div className='widgets__widgetContainer'>
         <h2>Whats Happening</h2>
 
         <TwitterTweetEmbed tweetId={'858551177860055040'} />
@@ -26,7 +26,7 @@ function Widgets() {
           options={{ height: 400 }}
         />
 
-        <TwitterShareButton className='share'
+        <TwitterShareButton 
           url={'https://facebook.com/cleverprogrammer'}
           options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}
         />
