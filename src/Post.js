@@ -7,34 +7,28 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PublishIcon from '@material-ui/icons/Publish';
 
-function Post({ 
-  displayName,
-  username,
-  verified,
-  text,
-  image,
-  avatar
- }) {
+function Post({ displayName, username, verified, text, image, avatar }) {
+
   return (
     <div className='post'>
       <div className="post_avatar">
-        <Avatar src = 'https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Tucker Butter{" "}
+              {displayName}{" "}
               <span className='post__headerSpecial'>
-                <CheckCircleIcon className='post__badge'></CheckCircleIcon>
+              {verified && <CheckCircleIcon className='post__badge' />} @{username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-          <p>I challenge tucker to build a twitter clone with react</p>
+          <p>{text}</p>
           </div>
         </div>
-        <img src="https://media.giphy.com/media/IQF90tVlBIByw/giphy.gif" alt=""/>
+        <img src={image} alt=""/>
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize='small' />
           <RepeatIcon fontSize='small' />

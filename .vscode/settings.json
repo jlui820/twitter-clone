@@ -7,5 +7,6 @@
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "tailwindCSS.emmetCompletions": true,
-  "html-css-class-completion.enableEmmetSupport": true
+  "html-css-class-completion.enableEmmetSupport": true,
+  "git.ignoreLimitWarning": true
 }
