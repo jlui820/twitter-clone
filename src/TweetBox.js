@@ -7,17 +7,15 @@ function TweetBox() {
     <div className='tweetBox'>
       <form>
         <div className='tweetBox__input'>
-          <Avatar src = 'https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'/>
+          <Avatar src='https://rlv.zcache.com/golden_retriever_dog_cartoon_coaster-r8f2f18e7c8af43e98dab67bf5f7abced_ambkq_8byvr_704.jpg' />
           <input placeholder='Whats happening?'></input>
         </div>
-          <input className='tweetBox__imageInput' 
-          placeholder='Enter input URL'
-          />
-          
+        <input className='tweetBox__imageInput' placeholder='Enter input URL' />
+
         <Button className='tweetBox__tweetButton'>Tweet</Button>
       </form>
     </div>
-  )
+  );
 }
 
 export default TweetBox
